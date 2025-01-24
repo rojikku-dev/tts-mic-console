@@ -1,0 +1,20 @@
+[project]
+name = "tts-mic-console"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rojikku.dev",email = "rojikku.dev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pygame (==2.6.1)",
+    "gTTS (==2.5.4)",
+    "pyaudio (>=0.2.14,<0.3.0)",
+    "pydub (>=0.25.1,<0.26.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
