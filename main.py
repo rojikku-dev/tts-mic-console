@@ -11,6 +11,8 @@ from pydub import AudioSegment
 mixer.init(devicename="CABLE Input(VB-Audio Virtual Cable)")
 while True:
     sentence = input("> ").replace("ㅋ", "크")
+    if not sentence:
+        continue
     tts = gTTS(sentence, lang="ko")
     fp = BytesIO()
     tts.write_to_fp(fp)
